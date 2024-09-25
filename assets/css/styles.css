@@ -13,7 +13,7 @@
   --text-color-light: hsl(var(--hue-color), 4%, 65%);
   --white-color: #FFF;
   --body-color: hsl(var(--hue-color), 0%, 0%);
-  --container-color: hsl(var(--hue-color), 0%, 1%);
+  --container-color: hsl(var(--hue-color), 0%, 0.33%);
   --text-gradient: linear-gradient(hsl(var(--hue-color), 4%, 44%), hsl(var(--hue-color), 4%, 18%));
   --text-gradientex: linear-gradient(#99ffc2,  #cbffe0);
   --scroll-thumb-color: hsl(var(--hue-color), 4%, 16%);
@@ -385,6 +385,7 @@ img {
 .discount__container {
   position: relative;
   background-color: var(--container-color);
+  opacity: 91%;
   padding: 2rem 1.5rem;
   border-radius: .75rem;
 }
@@ -429,6 +430,7 @@ img {
   padding: .75rem;
   border-radius: .5rem;
   display: grid;
+  opacity: 91%;
 }
 
 .products__imgex {
@@ -728,6 +730,7 @@ img {
     grid-template-columns: 142px;
     justify-content: center;
   }
+  
 }
 
 @media screen and (min-width: 767px) {
