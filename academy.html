@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+    <html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4/fonts/remixicon.css" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Nabla</title>
+    </head>
+    <body>
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <img src="assets/img/logo.png" alt="">
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="academy.html" class="nav__link active-link">Academy</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="healthcare.html" class="nav__link">Healthcare</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="algorithms.html" class="nav__link">Algorithms</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#footer" class="nav__link">Contatti</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="faq.html" class="nav__link">FAQ</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="ri-function-line"></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="main">
+            <div id="particles-js"></div> <!-- stats - count particles -->
+            <script src="particles.min.js"></script>
+                                
+                                <script>
+                                    particlesJS("particles-js", {
+                                    particles: {
+                                        number: { value: 50, density: { enable: true, value_area: 800 } },
+                                        color: { value: "#ffffff" },
+                                        shape: {
+                                        type: "circle",
+                                        stroke: { width: 0, color: "#000000" },
+                                        polygon: { nb_sides: 5 },
+                                        image: { src: "img/github.svg", width: 100, height: 100 }
+                                        },
+                                        opacity: {
+                                        value: 0.5,
+                                        random: false,
+                                        anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false }
+                                        },
+                                        size: {
+                                        value: 3,
+                                        random: true,
+                                        anim: { enable: false, speed: 20, size_min: 0.1, sync: false }
+                                        },
+                                        line_linked: {
+                                        enable: true,
+                                        distance: 150,
+                                        color: "#ffffff",
+                                        opacity: 0.4,
+                                        width: 1
+                                        },
+                                        move: {
+                                        enable: true,
+                                        speed: 6,
+                                        direction: "none",
+                                        random: false,
+                                        straight: false,
+                                        out_mode: "out",
+                                        bounce: false,
+                                        attract: { enable: false, rotateX: 600, rotateY: 1200 }
+                                        }
+                                    },
+                                    interactivity: {
+                                        detect_on: "canvas",
+                                        events: {
+                                        onhover: { enable: true, mode: "repulse" },
+                                        onclick: { enable: true, mode: "push" },
+                                        resize: true
+                                        },
+                                        modes: {
+                                        grab: { distance: 400, line_linked: { opacity: 1 } },
+                                        bubble: { distance: 400, size: 40, duration: 2, opacity: 8, speed: 3 },
+                                        repulse: { distance: 200, duration: 0.4 },
+                                        push: { particles_nb: 4 },
+                                        remove: { particles_nb: 2 }
+                                        }
+                                    },
+                                    retina_detect: true
+                                    });
+                                    var count_particles, stats, update;
+                                    stats = new Stats();
+                                    stats.setMode(0);
+                                    stats.domElement.style.position = "absolute";
+                                    stats.domElement.style.left = "0px";
+                                    stats.domElement.style.top = "0px";
+                                    document.body.appendChild(stats.domElement);
+                                    count_particles = document.querySelector(".js-count-particles");
+                                    update = function () {
+                                    stats.begin();
+                                    stats.end();
+                                    if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+                                        count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+                                    }
+                                    requestAnimationFrame(update);
+                                    };
+                                    requestAnimationFrame(update);
+            
+                                </script>
+            <style>
+                #divfix {
+                bottom: 1rem;
+                right: 3rem;
+                position: fixed;
+                z-index: 3000;
+            }
+            </style>
+            <div id="divfix">
+                <a href="https://discord.gg/yjeX7TPZgM"><img src="assets/img/discord.png" width="100px" height="100px"></a>
+            </div>
+
+            <section class="home section" id="home">
+                <div class="home__container container grid">
+                    <div>
+                        <img src="assets/img/logo-academy.png" alt="" class="home__img">
+                    </div>
+                    
+                    <div class="home__data">
+                        <div class="home__header">
+
+                            <br><br><br><br><h5 class="home__subtitle">Eccellenza e Innovazione<br>per il Successo Finanziario</h5> 
+                            <p class="home__description">
+                                <a href="https://academy.nablainvest.org/" class="button button--flex">
+                                    <b>Entra nell'Academy</b>
+                                </a>
+                            </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="discount section">
+                <div class="discount__containers container grid">
+                    <div class="discount__animate">
+                        <b>Nabla Invest Academy rappresenta il punto di riferimento per l'eccellenza e l'innovazione nel panorama degli investimenti. Offriamo un programma formativo esclusivo, progettato per fornire agli investitori le competenze avanzate e le strategie più efficaci per eccellere nel mondo finanziario. La nostra academy combina conoscenze teoriche approfondite con applicazioni pratiche, grazie a un corpo docente di esperti riconosciuti e a strumenti di analisi all'avanguardia.</b><!-- Unisciti a noi per acquisire le competenze necessarie per prendere decisioni informate e strategiche, e per costruire una carriera di successo nel settore degli investimenti.-->                    </div>
+                </div>
+            </section>
+                <section class="discount section"></section>
+                    <div class="discount__container container grid">
+                        <img src="assets/img/planacademy.png" alt="" class="discount__img">
+                        <div class="discount__animate">
+                            <h2 class="discount__title"><font color="#99ffc2">Plan Academy</font></h2>
+                            <span class="specs__subtitle">
+                                <b>Con l'accesso alla community, potrai partecipare a chat e vocal pubblici,<br>consultare le analisi grafiche aggiornate di Alfredo e degli<br>amministratori su azioni e criptovalute, e ricevere assistenza dedicata<br>tramite chat vocale e testuale. Avrai anche accesso al canale Discord<br>per condividere idee e grafici con altri membri, oltre a partecipare a<br>sessioni di Q&A live per risolvere i tuoi dubbi.<br>Il nostro team ti garantirà assistenza h24 con un tasso di risposta del 100% e<br>potrai usufruire delle analisi e grafici di Nabla Invest costantemente aggiornati.</b>
+                            </span><br><br>
+                            <a href="https://wa.me/393311480607" class="button button--flex">
+                                <i class="ri-whatsapp-line button__icon"></i> <b>Contattaci</b>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                
+                    <section class="discount section"></section>
+                        <div class="discount__container container grid">
+                            <img src="assets/img/hca.png" alt="" class="discount__img">
+                            <div class="discount__animate">
+                                <h2 class="discount__title"><font color="#99ffc2">Corso HCA©️</font></h2>
+                                <span class="specs__subtitle">
+                                    <b>Strategia Harmonic Confluence Analysis©️, basata su un algoritmo brevettato,<br>progettata per identificare con precisione aree di alta<br>probabilità sui mercati finanziari. Utilizzando livelli di confluenza<br>e analisi armonica, HCA offre segnali di ingresso e uscita ottimizzati,<br>minimizzando il rischio e massimizzando il rendimento potenziale.<br>Questa strategia è ideale per trader principianti ma anche per<br>trader esperti e per tutti coloro che cercano un approccio strutturato e scientifico ai mercati.<br>Grazie alla sua complessità e precisione, HCA è in grado di<br>adattarsi a diverse condizioni di mercato, fornendo un vantaggio competitivo<br>e significativo sui mercati. Inoltre tratteremo un money management innovativo.</b>
+                                </span><br><br>
+                                <a href="https://wa.me/393311480607" class="button button--flex">
+                                    <i class="ri-whatsapp-line button__icon"></i> <b>Contattaci</b>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="discount section">
+                        <div class="discount__container container grid">
+                            <img src="assets/img/money.png" alt="" class="discount__img">
+                            <div class="discount__animate">
+                                <h2 class="discount__title"><font color="#99ffc2">Corso Money Management</font></h2>
+                                <span class="specs__subtitle">
+                                    <b>Il money management è fondamentale per gestire il capitale e ridurre i rischi.<br>Si inizia definendo obiettivi finanziari chiari e creando un piano di gestione<br>del capitale che includa l'allocazione del rischio.<br>La diversificazione protegge da perdite su singoli asset, mentre il risk management<br>usa strumenti come stop-loss e gestione della leva per minimizzare i danni.<br>La gestione emotiva è cruciale per evitare decisioni impulsive. Per far crescere il capitale,<br>servono strategie di crescita sostenibili, e un regolare<br>monitoraggio del portafoglio aiuta a mantenere il controllo, affrontando<br>eventuali perdite con strategie adeguate.</b>
+                                </span><br><br>
+                                <a href="https://wa.me/393311480607" class="button button--flex">
+                                    <i class="ri-whatsapp-line button__icon"></i> <b>Contattaci</b>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="products section" id="products">
+
+                        <div class="products__containerex container grid">
+                            <article class="products__cardex">
+                                <div class="products__contentex">
+                                    <img src="assets/img/planacademy.png" alt="" class="products__img">
+            
+                                    <h3 class="products__title">Academy</h3>
+                                    <span class="products__price"><b>€300</b>/trimestre +iva
+                                    <br>
+                                    <b>€540</b>/semestre +iva
+                                    <br>
+                                    <b>€960</b>/anno +iva
+                                    <br></span>
+                                    <button class="button button--flex products__button">
+                                        <i class="ri-shopping-bag-line button__icon"></i>
+                                    </button>
+                                </div>
+                            </article>
+                            <article class="products__cardex">
+                                <div class="products__contentex">
+                                    <img src="assets/img/hca.png" alt="" class="products__img">
+            
+                                    <h3 class="products__title">HCA©️</h3>
+                                    <span class="products__price"><b>€3500</b>/mese +iva
+                                    <br></span>
+            
+                                    <button class="button button--flex products__button">
+                                        <i class="ri-shopping-bag-line button__icon"></i>
+                                    </button>
+                                </div>
+                            </article>
+                            <article class="products__cardex">
+                                <div class="products__contentex">
+                                    <img src="assets/img/money.png" alt="" class="products__img">
+            
+                                    <h3 class="products__title">Money Management</h3>
+                                    <span class="products__price"><b>€400</b>/mese +iva
+                                    <br></span>
+                                    <button class="button button--flex products__button">
+                                        <i class="ri-shopping-bag-line button__icon"></i>
+                                    </button>
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+
+                </section>
+                <section class="discount section">
+                    <h2 class="section__title section__title-gradient">Recensioni</h2>
+                    <div class="discount__containers containers grids">
+                        <div class="discount__animate container grid">
+                            <center><video width="42%" height="100%" autoplay muted>
+                                <source src="assets/reviews.mp4" type="video/mp4">
+                              Your browser does not support the video tag.
+                            </video></center>
+                        </div>
+                    </div>   
+                </section>
+
+                <section class="discount section">
+                    <h2 class="section__title section__title-gradient">Risultati</h2>
+                    <div class="discount__containers containers grids">
+                        <div class="discount__animate container grid">
+                            <center><video width="42%" height="100%" autoplay muted>
+                                <source src="assets/risultati.mp4" type="video/mp4">
+                              Your browser does not support the video tag.
+                            </video></center>
+                        </div>
+                    </div>   
+    
+                </section>
+    
+                <section class="products section" id="chisiamo">
+                    <h2 class="section__title section__title-gradient products__line">
+                        Team
+                    </h2>
+    
+                    <div class="products__containerex container grid">
+                        <article class="products__cardex">
+                            <div class="products__contentex">
+                                <img src="assets/img/alfre.png" alt="" class="products__imgexex">
+        
+                                <h3 class="products__title">Alfredo Merlini "Nabla"</h3>
+                                <span class="products__price">Founder, CEO</span>
+        
+                                <button class="button button--flex products__button">
+                                    <i class="ri-discord-fill button__icon"></i>
+                                </button>
+                            </div>
+                        </article>
+                        <article class="products__cardex">
+                            <div class="products__contentex">
+                                <img src="assets/img/matte.png" alt="" class="products__imgexex">
+        
+                                <h3 class="products__title">Matteo "matteoNN"</h3>
+                                <span class="products__price">Analista Macroeconomico</span>
+        
+                                <button class="button button--flex products__button">
+                                    <i class="ri-discord-fill button__icon"></i>
+                                </button>
+                            </div>
+                        </article>
+                        <article class="products__cardex">
+                            <div class="products__contentex">
+                                <img src="assets/img/pasquale.png" alt="" class="products__imgexex">
+        
+                                <h3 class="products__title">Pasquale</h3>
+                                <span class="products__price">Analista Aziendale</span>
+        
+                                <button class="button button--flex products__button">
+                                    <i class="ri-discord-fill button__icon"></i>
+                                </button>
+                            </div>
+                        </article>
+                        <article class="products__cardex">
+                            <div class="products__contentex">
+                                <img src="assets/img/monia.png" alt="" class="products__imgexex">
+        
+                                <h3 class="products__title">Monia "Monia.17"</h3>
+                                <span class="products__price">Social Media Manager</span>
+        
+                                <button class="button button--flex products__button">
+                                    <i class="ri-discord-fill button__icon"></i>
+                                </button>
+                            </div>
+                        </article>
+    
+                        <article class="products__cardex">
+                            <div class="products__contentex">
+                                <img src="assets/img/ricky.png" alt="" class="products__imgexex">
+        
+                                <h3 class="products__title">Ricky "Cienfuegos"</h3>
+                                <span class="products__price">Amministratore Discord</span>
+        
+                                <button class="button button--flex products__button">
+                                    <i class="ri-discord-fill button__icon"></i>
+                                </button>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+                
+            </main>
+
+            
+
+            <footer class="footer section" id="footer">
+                <div class="footer__container container grid">
+                    <a href="#" class="footer__logo">
+                        <img src="assets/img/logo.png" alt="">
+                    </a>
+        
+                    <div class="footer__content">
+                        <h3 class="footer__title">Nabla</h3>
+        
+                        <ul class="footer__links">
+                            <li>
+                                <a href="index.html" class="footer__link">Home</a>
+                            </li>
+                            <li>
+                                <a href="academy.html" class="footer__link">Academy</a>
+                            </li>            
+                            <li>
+                                <a href="healthcare.html" class="footer__link">Healthcare</a>
+                            </li>
+                            <li>
+                                <a href="algorithms.html" class="footer__link">Algorithms</a>
+                            </li>
+                            <li>
+                                <a href="faq.html" class="footer__link">FAQ</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__content">
+                        <h3 class="footer__title">Contatti</h3>
+        
+                        <ul class="footer__links">
+                            <li>
+                                <a href="mailto:mgmt@nablainvest.it" class="footer__link">mgmt@nablainvest.it</a>
+                            </li>
+                            <li>
+                                <a href="tel:00393311480607" class="footer__link">+39 3311480607</a>
+                            </li>
+                        </ul>
+                    </div>
+    
+                    <div class="footer__content">
+                        <h3 class="footer__title">Follow us</h3>
+        
+                        <ul class="footer__links">
+                            <li>
+                                <a href="https://www.instagram.com/nabla_invest" target="_blank" class="footer__social-link">
+                                    <i class="ri-instagram-line"></i>
+                                </a>
+                                <a href="https://www.tiktok.com/@nabla_crypto_finance" target="_blank" class="footer__social-link">
+                                    <i class="ri-tiktok-fill"></i>
+                                </a>
+                                <a href="https://x.com/nablainvest" target="_blank" class="footer__social-link">
+                                    <i class="ri-twitter-x-line"></i>
+                                </a>
+                                <a href="https://www.facebook.com/profile.php?id=61558621568799" target="_blank" class="footer__social-link">
+                                    <i class="ri-facebook-line"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://t.me/+p9UtnzKrjjdkNjRk" target="_blank" class="footer__social-link">
+                                    <i class="ri-telegram-line"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/company/nabla-invest-srl/" target="_blank" class="footer__social-link">
+                                    <i class="ri-linkedin-box-fill"></i>
+                                </a>
+                                <a href="https://youtube.com/@nabla_crypto_fiance" target="_blank" class="footer__social-link">
+                                    <i class="ri-youtube-fill"></i>
+                                </a>
+                                <a href="https://discord.gg/yjeX7TPZgM" target="_blank" class="footer__social-link">
+                                    <i class="ri-discord-fill"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        
+                    </div>
+    
+                </div>
+    
+                <p class="footer__copy">
+                
+                    <img src="assets/img/cysec.png" alt="" class="sponsor__img">
+                    <img src="assets/img/fca.png" alt="" class="sponsor__img">
+                    <br><br>
+                <a href="conditions.html" target="_blank" class="footer__copy-link">Termini e Condizioni<br><br>&#169; Nabla Invest Srl Uni. - P.Iva 01750040535.<br>All rights reserved<br>Coded by Rams</a>
+            </p>
+
+        <a href="#" class="scrollup" id="scroll-up">
+            <i class="ri-arrow-up-s-line scrollup__icon"></i>
+        </a>
+
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script>document.addEventListener('contextmenu', event => event.preventDefault());</script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
