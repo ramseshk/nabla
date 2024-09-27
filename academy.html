@@ -260,28 +260,200 @@
 
                 </section>
                 <section class="discount section">
-                    <h2 class="section__title section__title-gradient">Recensioni</h2>
-                    <div class="discount__containers containers grids">
-                        <div class="discount__animate container grid">
-                            <center><video width="42%" height="100%" autoplay muted>
-                                <source src="assets/reviews.mp4" type="video/mp4">
-                              Your browser does not support the video tag.
-                            </video></center>
-                        </div>
-                    </div>   
-                </section>
-
-                <section class="discount section">
                     <h2 class="section__title section__title-gradient">Risultati</h2>
                     <div class="discount__containers containers grids">
                         <div class="discount__animate container grid">
-                            <center><video width="42%" height="100%" autoplay muted>
-                                <source src="assets/risultati.mp4" type="video/mp4">
-                              Your browser does not support the video tag.
-                            </video></center>
+                            <center>
+                                <style>
+                                    .css-slideshow{
+                                    position: relative;
+                                    max-width: 495px;
+                                    height: 370px;
+                                    margin: 5em auto .5em auto;
+                                    }
+                                    .css-slideshow figure{
+                                    margin: 0;
+                                    max-width: 495px;
+                                    height: 370px;
+                                    background: #000;
+                                    position: absolute;
+                                    }
+                                    .css-slideshow img{
+                                    box-shadow: 0 0 2px #666;
+                                    }
+                                    .css-slideshow figcaption{
+                                    position: absolute;
+                                    top: 0;
+                                    color: #fff;
+                                    background: rgba(0,0,0, .3);
+                                    font-size: .8em;
+                                    padding: 8px 12px;
+                                    opacity: 0;
+                                    transition: opacity .5s;
+                                    }
+                                    .css-slideshow:hover figure figcaption{
+                                    transition: opacity .5s;
+                                    opacity: 1;
+                                    }
+                                    .css-slideshow-attr{
+                                    max-width: 495px;
+                                    text-align: right;
+                                    font-size: .7em;
+                                    font-style: italic;
+                                    margin:0 auto;
+                                    }
+                                    .css-slideshow-attr a{
+                                    color: #666;
+                                    }
+                                    .css-slideshow figure{
+                                    opacity:0;
+                                    }
+                                    figure:nth-child(1) {
+                                    animation: xfade 48s 42s infinite;
+                                    }
+                                    figure:nth-child(2) {
+                                    animation: xfade 48s 36s infinite;
+                                    }
+                                    figure:nth-child(3) {
+                                    animation: xfade 48s 30s infinite;
+                                    }
+                                    figure:nth-child(4) {
+                                    animation: xfade 48s 24s infinite;
+                                    }
+                                    figure:nth-child(5) {
+                                    animation: xfade 48s 18s infinite;
+                                    }
+                                    figure:nth-child(6) {
+                                    animation: xfade 48s 12s infinite;
+                                    }
+                                    figure:nth-child(7) {
+                                    animation: xfade 48s 6s infinite;
+                                    }
+                                    figure:nth-child(8) {
+                                    animation: xfade 48s 0s infinite;
+                                    }
+
+                                    @keyframes xfade{
+                                    0%{
+                                        opacity: 1;
+                                    }
+                                    10.5% {
+                                        opacity: 1;
+                                    }
+                                    12.5%{
+                                        opacity: 0;
+                                    }
+                                    98% {
+                                        opacity: 0;
+                                    }
+                                    100% {
+                                        opacity: 1;
+                                    }
+                                    }
+                                </style>
+                                <div class="css-slideshow">
+                                    <figure>
+                                        <img src="assets/risultati/Zscaler 1.png" alt="class-header-css3"  class="alignnone size-full wp-image-172" />
+                                    </figure>
+                                    <figure>
+                                        <img src="assets/risultati/Zscaler 2.png" alt="class-header-semantics" class="alignnone size-full wp-image-179" />
+                                    </figure>
+                                    <figure>
+                                        <img src="assets/risultati/Zscaler 3.png" alt="class-header-offline" class="alignnone size-large wp-image-178" />
+                                    </figure>
+                                    <figure>
+                                        <img src="assets/risultati/Zscaler 4.png" alt="class-header-device" class="alignnone size-full wp-image-177" />
+                                    </figure>
+                                    <figure>
+                                        <img src="assets/risultati/Tesla 1.png" alt="class-header-connectivity" class="alignnone size-large wp-image-176" />
+                                    </figure>
+                                    <figure>
+                                        <img src="assets/risultati/Tesla 2.png" alt="class-header-multimedia" class="alignnone size-large wp-image-175" />
+                                    </figure>
+                                    <figure>
+                                        <img src="assets/risultati/Tesla 3.png" alt="class-header-3d" class="alignnone size-large wp-image-174" />
+                                    </figure>
+                                    <figure>
+                                        <img src="assets/risultati/Tesla 4.png" alt="class-header-performance" class="alignnone size-large wp-image-173" />
+                                    </figure>
+                                    <figure>
+                                        <img src="assets/risultati/Reddit 1.png" alt="class-header-connectivity" class="alignnone size-large wp-image-176" />
+                                    </figure>
+                                    <figure>
+                                        <img src="assets/risultati/Reddit 2.png" alt="class-header-multimedia" class="alignnone size-large wp-image-175" />
+                                    </figure>
+                                    <figure>
+                                        <img src="assets/risultati/Reddit 3.png" alt="class-header-3d" class="alignnone size-large wp-image-174" />
+                                    </figure>
+                                    <figure>
+                                        <img src="assets/risultati/PayPal 1.png" alt="class-header-performance" class="alignnone size-large wp-image-173" />
+                                    </figure>
+                                    <figure>
+                                        <img src="assets/risultati/PayPal 2.png" alt="class-header-connectivity" class="alignnone size-large wp-image-176" />
+                                    </figure>
+                                    <figure>
+                                        <img src="assets/risultati/PayPal 3.png" alt="class-header-multimedia" class="alignnone size-large wp-image-175" />
+                                    </figure>
+                                    <figure>
+                                        <img src="assets/risultati/Nike 1.png" alt="class-header-3d" class="alignnone size-large wp-image-174" />
+                                    </figure>
+                                    <figure>
+                                        <img src="assets/risultati/Nike 2.png" alt="class-header-performance" class="alignnone size-large wp-image-173" />
+                                    </figure>
+                                    <figure>
+                                        <img src="assets/risultati/Nike 3.png" alt="class-header-3d" class="alignnone size-large wp-image-174" />
+                                    </figure>
+                                    <figure>
+                                        <img src="assets/risultati/Nike 4.png" alt="class-header-performance" class="alignnone size-large wp-image-173" />
+                                    </figure>
+                                    <figure>
+                                        <img src="assets/risultati/Nike 5.png" alt="class-header-performance" class="alignnone size-large wp-image-173" />
+                                    </figure>
+                                    <figure>
+                                        <img src="assets/risultati/Moncler 1.png" alt="class-header-performance" class="alignnone size-large wp-image-173" />
+                                    </figure>
+                                    <figure>
+                                        <img src="assets/risultati/Moncler 2.png" alt="class-header-connectivity" class="alignnone size-large wp-image-176" />
+                                    </figure>
+                                    <figure>
+                                        <img src="assets/risultati/Moncler 3.png" alt="class-header-multimedia" class="alignnone size-large wp-image-175" />
+                                    </figure>
+                                    <figure>
+                                        <img src="assets/risultati/Mind Medicine 1.png" alt="class-header-connectivity" class="alignnone size-large wp-image-176" />
+                                    </figure>
+                                    <figure>
+                                        <img src="assets/risultati/Mind Medicine 2.png" alt="class-header-multimedia" class="alignnone size-large wp-image-175" />
+                                    </figure>
+                                    <figure>
+                                        <img src="assets/risultati/Mind Medicine 3.png" alt="class-header-multimedia" class="alignnone size-large wp-image-175" />
+                                    </figure>
+                                    <figure>
+                                        <img src="assets/risultati/Mind Medicine 4.png" alt="class-header-multimedia" class="alignnone size-large wp-image-175" />
+                                    </figure>
+                                    <figure>
+                                        <img src="assets/risultati/Mind Medicine 5.png" alt="class-header-multimedia" class="alignnone size-large wp-image-175" />
+                                    </figure>
+                                    <figure>
+                                        <img src="assets/risultati/Mc Donalds 1.png" alt="class-header-connectivity" class="alignnone size-large wp-image-176" />
+                                    </figure>
+                                    <figure>
+                                        <img src="assets/risultati/Mc Donalds 2.png" alt="class-header-multimedia" class="alignnone size-large wp-image-175" />
+                                    </figure>
+                                    <figure>
+                                        <img src="assets/risultati/Mc Donalds 3.png" alt="class-header-multimedia" class="alignnone size-large wp-image-175" />
+                                    </figure>
+                                    <figure>
+                                        <img src="assets/risultati/Mc Donalds 4.png" alt="class-header-multimedia" class="alignnone size-large wp-image-175" />
+                                    </figure>
+                                    <figure>
+                                        <img src="assets/risultati/HSI 1.png" alt="class-header-multimedia" class="alignnone size-large wp-image-175" />
+                                    </figure>
+                                </div>  
+
+                            </center>
+                            <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
                         </div>
                     </div>   
-    
                 </section>
     
                 <section class="products section" id="chisiamo">
